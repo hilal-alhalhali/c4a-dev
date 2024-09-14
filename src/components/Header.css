@@ -1,0 +1,25 @@
+
+/* ==================
+    3. header of mobile
+===================== */
+
+.myheader  .H-color{
+  background-color: teal;
+}
+.show-when-mobile {
+    display: none;
+  }
+  .main-link.active{
+    background-color: teal;
+  }
+
+  @media (max-width: 800px) {
+    .show-when-mobile {
+        display: block;
+      }
+      
+      .hide-when-mobile {
+        display: none;
+      }
+      
+  }

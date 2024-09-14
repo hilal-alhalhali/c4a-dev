@@ -1,10 +1,20 @@
+import { Route, Routes } from 'react-router-dom';
 import './index.css';
+import Home from './pages/home';
+import Html from './pages/html';
+import Css from './pages/css';
+import Javascript from './pages/javascript';
 function App() {
   return (
 <>
-    <h1 className="title">c4a.dev</h1>
-    <h2>hilal React</h2>
+<Routes>
+  <Route path='/' element={<Home/>}/>
+  <Route path='/html' element={<Html/>}/>
+  <Route path='/css' element={<Css/>}/>
+  <Route path='/javascript' element={<Javascript/>}/>
+</Routes>
 </>
+
   );
 }
 
